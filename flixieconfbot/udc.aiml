@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>een aanbeveling<set>aanbeveling</set></pattern>
+    <template> Hoi! Ik ben Flixie en ik kan je helpen! Ben je op zoek naar een film of serie?</template>
+  </category>
+
+ <category>
+    <pattern>*</pattern>
+    <template>Sorry kun je dat herformuleren?</template>
+  </category>
+</aiml>

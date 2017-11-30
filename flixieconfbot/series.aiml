@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+    <pattern> <set>recommendation</set> serie</pattern>
+    <template>Waar wil je naar kijken</template>
+  </category>
+  
+    <category>
+    <pattern>komedie</pattern>
+     <that>Waar wil je naar kijken</that>
+    <template>Komedie, goede keuze! Kijk je dit alleen?</template>
+  </category>
+  
+  <category>
+     <pattern>actie</pattern>
+     <that>Waar wil je naar kijken</that>
+     <template>Actie, goede keuze! Kijk je dit alleen?</template>
+  </category>
+  
+  <category>
+     <pattern>drama</pattern>
+     <that>Waar wil je naar kijken</that>
+     <template>Drama, goede keuze! Kijk je dit alleen?</template>
+  </category>
+  
+   <category>
+    <pattern>ja</pattern>
+     <that>Kijk je dit alleen</that>
+    <template>Ben je zelf jonger dan 16 jaar?</template>
+  </category>
+  
+  <category>
+    <pattern>no</pattern>
+     <that>Kijk je dit alleen</that>
+    <template>Met wie kijk je deze serie?</template>
+  </category>
+  
+  <category>
+    <pattern>*</pattern>
+     <that>Kijk je dit alleen</that>
+    <template>Sorry kun je dit herformuleren?</template>
+  </category>
+  
+  <category>
+    <pattern>mijn zus</pattern>
+     <that>Met wie kijk je deze serie</that>
+    <template>Is een van de kijkers jonger dan 16 jaar?</template>
+  </category>
+  
+  <category>
+    <pattern>ja</pattern>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
+    <template>Sorry, geen van de opties zijn geschikt voor deze leeftijdsgroep.</template>
+  </category>
+  
+  <category>
+    <pattern>nee</pattern>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
+    <template>Dit zijn mijn opties:</template>
+  </category>
+  
+   <category>
+    <pattern>*</pattern>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
+    <template>Sorry kun je dit herformuleren?</template>
+  </category>
+</aiml>
