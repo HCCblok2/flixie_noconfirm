@@ -46,12 +46,12 @@
    <category>
     <pattern>^<set>ja</set></pattern>
      <that>Kijk je dit alleen</that>
-    <template>Ben je zelf jonger dan 16 jaar?</template>
+    <template>Ben je zelf een film kijker jonger dan 16 jaar?</template>
   </category>
-  
   
   <category>
     <pattern>^<set>ja</set></pattern>
+    <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
     <template> 
         <condition name="genre" value="actie">
               Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange.
@@ -67,7 +67,7 @@
   
   <category>
    <pattern>^<set>nee</set></pattern>
-     <that>Ben je zelf jonger dan 16 jaar</that>
+     <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
     <template>
     <condition name="genre" value="actie">
             Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
@@ -102,7 +102,7 @@
   
   <category>
     <pattern>^<set>ja</set></pattern>
-     <that>Is een van de kijkers jonger dan 16 jaar</that>
+     <that>Is een van de film kijkers jonger dan 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
               Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange.
@@ -118,7 +118,7 @@
   
   <category>
     <pattern>^<set>nee</set></pattern>
-     <that>Is een van de kijkers jonger dan 16 jaar</that>
+     <that>Is een van de film kijkers jonger dan 16 jaar</that>
     <template>
         <condition name="genre" value="actie">
             Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
@@ -134,7 +134,7 @@
   
    <category>
     <pattern>*</pattern>
-     <that>Is een van de kijkers jonger dan 16 jaar</that>
+     <that>Is een van de film kijkers jonger dan 16 jaar</that>
     <template>Sorry kun je dit herformuleren?</template>
   </category>
 </aiml>

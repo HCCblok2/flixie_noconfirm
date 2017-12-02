@@ -28,33 +28,26 @@
      <pattern>SERIE</pattern>
      <template>Waar wil je naar kijken?</template>
 </category>
-  <category>
-    <pattern>komedie</pattern>
-     <that>Waar wil je naar kijken</that>
-    <template>Kijk je dit alleen?</template>
-  </category>
   
-  <category>
-     <pattern>actie</pattern>
-     <that>Waar wil je naar kijken</that>
-     <template>Kijk je dit alleen?</template>
-  </category>
-  
-  <category>
-     <pattern>drama</pattern>
-     <that>Waar wil je naar kijken</that>
-     <template>Kijk je dit alleen?</template>
-  </category>
-  
-   <category>
-    <pattern>^<set>ja</set></pattern>
-     <that>Kijk je dit alleen</that>
-    <template>Ben je zelf jonger dan 16 jaar?</template>
-  </category>
+ <category>
+  <pattern><set>genres</set></pattern>
+    <template>
+      <think><set name="genre"><input /></set></think>
+        <condition name="genre" value="actie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="drama">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="komedie">
+            Kijk je dit alleen?
+        </condition>
+    </template> 
+</category>
 
 <category>
       <pattern>^<set>ja</set></pattern>
-      <that>Ben je jonger dan 16</that>
+      <that>Ben je jonger dan 16 jaar</that>
       <template>
           <condition name="genre" value="actie">
               Dit zijn de beste opties: Arrow en Blindspot.
@@ -70,7 +63,7 @@
 
 <category>
      <pattern>^<set>nee</set></pattern>
-      <that>Ben je jonger dan 16</that>
+      <that>Ben je jonger dan 16 jaar</that>
       <template>
         <condition name="genre" value="actie">
             Dit zijn de beste opties: The Punisher, Arrow en Blindspot.
@@ -100,12 +93,12 @@
     <pattern>^<set>partners</set></pattern>
      <that>Met wie kijk je deze serie</that>
     <template><think><set name="partner"><input/></set></think>
-    Is een van de kijkers jonger dan 16 jaar?</template>
+    Is een van de kijkers onder de 16 jaar?</template>
   </category>
   
   <category>
    <pattern>^<set>ja</set></pattern>
-     <that>Is een van de kijkers jonger dan 16 jaar</that>
+     <that>Is een van de kijkers onder de 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
               Dit zijn de beste opties: Arrow en Blindspot.
@@ -120,7 +113,7 @@
   
   <category>
     <pattern>^<set>nee</set></pattern>
-     <that>Is een van de kijkers jonger dan 16 jaar</that>
+     <that>Is een van de kijkers onder de 16 jaar</that>
     <template>
         <condition name="genre" value="actie">
             Dit zijn de beste opties: The Punisher, Arrow en Blindspot.
@@ -136,7 +129,7 @@
   
    <category>
     <pattern>*</pattern>
-     <that>Is een van de kijkers jonger dan 16 jaar</that>
+     <that>Is een van de kijkers onder de 16 jaar</that>
     <template>Sorry kun je dit herformuleren?</template>
   </category>
 </aiml>
