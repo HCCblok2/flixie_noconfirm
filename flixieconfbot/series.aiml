@@ -1,36 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    <category>
-    <pattern> <set>recommendation</set> serie</pattern>
-    <template>Waar wil je naar kijken</template>
+    
+   <!-- bla
+   <category>
+      <pattern><set>aanbeveling</set>SERIE</pattern>
+      <template>
+      <think><set name="medium">serie</set></think>
+      Wat voor soort film wil je kijken?
+      </template>
+</category>
+-->
+
+<category>
+    <pattern>*</pattern>
+    <template>
+        <condition name="medium"  value="serie"></condition>
+        <condition name="medium" value="film"></condition>
+    </template>
   </category>
   
-    <category>
+  <category>
+     <pattern>FILM</pattern>
+     <template>Waar wil je naar kijken?</template>
+  </category>
+  
+  <category>
+     <pattern>SERIE</pattern>
+     <template>Waar wil je naar kijken?</template>
+</category>
+  <category>
     <pattern>komedie</pattern>
      <that>Waar wil je naar kijken</that>
-    <template>Komedie, goede keuze! Kijk je dit alleen?</template>
+    <template>Kijk je dit alleen?</template>
   </category>
   
   <category>
      <pattern>actie</pattern>
      <that>Waar wil je naar kijken</that>
-     <template>Actie, goede keuze! Kijk je dit alleen?</template>
+     <template>Kijk je dit alleen?</template>
   </category>
   
   <category>
      <pattern>drama</pattern>
      <that>Waar wil je naar kijken</that>
-     <template>Drama, goede keuze! Kijk je dit alleen?</template>
+     <template>Kijk je dit alleen?</template>
   </category>
   
    <category>
-    <pattern>ja</pattern>
+    <pattern>^<set>ja</set></pattern>
      <that>Kijk je dit alleen</that>
     <template>Ben je zelf jonger dan 16 jaar?</template>
   </category>
-  
+
+<category>
+      <pattern>^<set>ja</set></pattern>
+      <that>Ben je jonger dan 16</that>
+      <template>
+          <condition name="genre" value="actie">
+              Dit zijn de beste opties: Arrow en Blindspot.
+          </condition>
+          <condition name="genre" value="drama">
+              Dit zijn de beste opties Stranger Things, Sherlock en The Flash.
+          </condition>
+          <condition name="genre" value="komedie">
+              Dit zijn de beste opties How I Met Your Mother, Modern Family en Rick and Morty.
+          </condition>
+      </template>
+</category>
+
+<category>
+     <pattern>^<set>nee</set></pattern>
+      <that>Ben je jonger dan 16</that>
+      <template>
+        <condition name="genre" value="actie">
+            Dit zijn de beste opties: The Punisher, Arrow en Blindspot.
+        </condition>    
+        <condition name="genre" value="drama">
+            Dit zijn de beste opties: Stranger Things, Sherlock en The Flash.
+        </condition>
+        <condition name="genre" value="komedie">
+            Dit zijn de beste opties: How I Met Your Mother, Modern Family en Rick and Morty.
+        </condition>
+      </template>
+</category>
+
   <category>
-    <pattern>no</pattern>
+    <pattern>^<set>nee</set></pattern>
      <that>Kijk je dit alleen</that>
     <template>Met wie kijk je deze serie?</template>
   </category>
@@ -41,22 +96,42 @@
     <template>Sorry kun je dit herformuleren?</template>
   </category>
   
-  <category>
-    <pattern>mijn zus</pattern>
+    <category>
+    <pattern>^<set>partners</set></pattern>
      <that>Met wie kijk je deze serie</that>
-    <template>Is een van de kijkers jonger dan 16 jaar?</template>
+    <template><think><set name="partner"><input/></set></think>
+    Is een van de kijkers jonger dan 16 jaar?</template>
   </category>
   
   <category>
-    <pattern>ja</pattern>
+   <pattern>^<set>ja</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
-    <template>Sorry, geen van de opties zijn geschikt voor deze leeftijdsgroep.</template>
+    <template>
+          <condition name="genre" value="actie">
+              Dit zijn de beste opties: Arrow en Blindspot.
+          </condition>
+          <condition name="genre" value="drama">
+              Dit zijn de beste opties: Stranger Things, Sherlock en The Flash.
+          </condition>
+          <condition name="genre" value="komedie">
+              Dit zijn de beste opties: How I Met Your Mother, Modern Family en Rick and Morty.
+</condition></template>
   </category>
   
   <category>
-    <pattern>nee</pattern>
+    <pattern>^<set>nee</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
-    <template>Dit zijn mijn opties:</template>
+    <template>
+        <condition name="genre" value="actie">
+            Dit zijn de beste opties: The Punisher, Arrow en Blindspot.
+        </condition>    
+        <condition name="genre" value="drama">
+            Dit zijn de beste opties: Stranger Things, Sherlock en The Flash.
+        </condition>
+        <condition name="genre" value="komedie">
+            Dit zijn de beste opties: How I Met Your Mother, Modern Family en Rick and Morty.
+        </condition>
+    </template>
   </category>
   
    <category>

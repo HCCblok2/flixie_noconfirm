@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
  
+   <!--
+   <category>
+      <pattern><set>aanbeveling</set> FILM</pattern>
+      <template><think><set name="medium">film</set></think>
+      Waar wil je naar kijken?
+      </template>
+</category>
+  --> 
   <category>
     <pattern>*</pattern>
     <template>
@@ -17,34 +25,64 @@
   <category>
      <pattern>SERIE</pattern>
      <template>Waar wil je naar kijken?</template>
-  </category>
-  
-    <category>
-    <pattern>komedie</pattern>
-     <that>Waar wil je naar kijken</that>
-    <template>Komedie, goede keuze! Kijk je dit alleen?</template>
-  </category>
-  
+</category>
+
   <category>
-     <pattern>actie</pattern>
-     <that>Waar wil je naar kijken</that>
-     <template>Actie, goede keuze! Kijk je dit alleen?</template>
-  </category>
-  
-  <category>
-     <pattern>drama</pattern>
-     <that>Waar wil je naar kijken</that>
-     <template>Drama, goede keuze! Kijk je dit alleen?</template>
-  </category>
-  
+  <pattern><set>genres</set></pattern>
+    <template>
+      <think><set name="genre"><input /></set></think>
+        <condition name="genre" value="actie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="drama">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="komedie">
+            Kijk je dit alleen?
+        </condition>
+    </template> 
+</category>
+   
    <category>
-    <pattern>ja</pattern>
+    <pattern>^<set>ja</set></pattern>
      <that>Kijk je dit alleen</that>
     <template>Ben je zelf jonger dan 16 jaar?</template>
   </category>
   
+  
   <category>
-    <pattern>nee</pattern>
+    <pattern>^<set>ja</set></pattern>
+    <template> 
+        <condition name="genre" value="actie">
+              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange.
+          </condition>
+          <condition name="genre" value="drama">
+              Dit zijn de beste opties: Forrest Gump.
+          </condition>
+          <condition name="genre" value="komedie">
+              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man.
+          </condition> 
+    </template>
+  </category>
+  
+  <category>
+   <pattern>^<set>nee</set></pattern>
+     <that>Ben je zelf jonger dan 16 jaar</that>
+    <template>
+    <condition name="genre" value="actie">
+            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
+        </condition>    
+        <condition name="genre" value="drama">
+            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables.
+        </condition>
+        <condition name="genre" value="komedie">
+            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man.
+        </condition>
+    </template>
+  </category>
+  
+  <category>
+   <pattern>^<set>nee</set></pattern>
      <that>Kijk je dit alleen</that>
     <template>Met wie kijk je deze serie?</template>
   </category>
@@ -56,35 +94,43 @@
   </category>
   
   <category>
-    <pattern>nee</pattern>
-     <that>Ben je zelf jonger dan 16 jaar</that>
-    <template>Dit zijn je opties: </template>
+    <pattern>^<set>partners</set></pattern>
+         <that>Met wie kijk je deze serie</that>
+    <template><think><set name="partners"><input /></set></think>
+    Is een van de kijkers jonger dan 16 jaar?</template>
   </category>
   
   <category>
-    <pattern>ja</pattern>
-     <that>Ben je zelf jonger dan 16 jaar</that>
-    <template>Sorry er is geen optie die geschikt is voor deze leeftijd.</template>
-  </category>
-  
-  <category>
-    <pattern>mijn zus</pattern>
-     <that>Met wie kijk je deze serie</that>
-    <template>Is een van de kijkers jonger dan 16 jaar?</template>
-  </category>
-  
-  <category>
-    <pattern>ja</pattern>
+    <pattern>^<set>ja</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
-    <template>Sorry, geen van de opties zijn geschikt voor deze leeftijdsgroep.</template>
+    <template>
+          <condition name="genre" value="actie">
+              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange.
+          </condition>
+          <condition name="genre" value="drama">
+              Dit zijn de beste opties: Forrest Gump.
+          </condition>
+          <condition name="genre" value="komedie">
+              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man.
+          </condition>
+    </template>
   </category>
   
   <category>
-    <pattern>nee</pattern>
+    <pattern>^<set>nee</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
-    <template>Dit zijn mijn opties:</template>
+    <template>
+        <condition name="genre" value="actie">
+            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
+        </condition>    
+        <condition name="genre" value="drama">
+            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables.
+        </condition>
+        <condition name="genre" value="komedie">
+            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man.
+        </condition>
+    </template>
   </category>
-  
   
    <category>
     <pattern>*</pattern>
