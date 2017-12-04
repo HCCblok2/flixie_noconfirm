@@ -28,7 +28,7 @@
 </category>
 
   <category>
-  <pattern><set>genres</set></pattern>
+  <pattern><set>genre</set></pattern>
     <template>
       <think><set name="genre"><input /></set></think>
         <condition name="genre" value="actie">
@@ -44,13 +44,13 @@
 </category>
    
    <category>
-    <pattern>^<set>ja</set></pattern>
+    <pattern><set>ja</set></pattern>
      <that>Kijk je dit alleen</that>
     <template>Ben je zelf een film kijker jonger dan 16 jaar?</template>
   </category>
   
   <category>
-    <pattern>^<set>ja</set></pattern>
+    <pattern><set>ja</set></pattern>
     <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
     <template> 
         <condition name="genre" value="actie">
@@ -66,7 +66,7 @@
   </category>
   
   <category>
-   <pattern>^<set>nee</set></pattern>
+   <pattern><set>nee</set></pattern>
      <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
     <template>
     <condition name="genre" value="actie">
@@ -82,7 +82,7 @@
   </category>
   
   <category>
-   <pattern>^<set>nee</set></pattern>
+   <pattern><set>nee</set></pattern>
      <that>Kijk je dit alleen</that>
     <template>Met wie kijk je deze serie?</template>
   </category>
@@ -94,14 +94,14 @@
   </category>
   
   <category>
-    <pattern>^<set>partners</set></pattern>
+    <pattern><set>partners</set></pattern>
          <that>Met wie kijk je deze serie</that>
     <template><think><set name="partners"><input /></set></think>
     Is een van de kijkers jonger dan 16 jaar?</template>
   </category>
   
   <category>
-    <pattern>^<set>ja</set></pattern>
+    <pattern><set>ja</set></pattern>
      <that>Is een van de film kijkers jonger dan 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
@@ -117,7 +117,7 @@
   </category>
   
   <category>
-    <pattern>^<set>nee</set></pattern>
+    <pattern><set>nee</set></pattern>
      <that>Is een van de film kijkers jonger dan 16 jaar</that>
     <template>
         <condition name="genre" value="actie">
