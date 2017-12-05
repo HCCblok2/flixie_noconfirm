@@ -62,6 +62,12 @@
 </category>
 
 <category>
+    <pattern><set>tvshow</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
+
+<category>
      <pattern><set>nee</set></pattern>
       <that>Ben je jonger dan 16 jaar</that>
       <template>
@@ -76,6 +82,12 @@
         </condition>
       </template>
 </category>
+
+<category>
+    <pattern><set>tvshow</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
 
   <category>
     <pattern><set>nee</set></pattern>
@@ -112,6 +124,12 @@
   </category>
   
   <category>
+    <pattern><set>tvshow</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
+  
+  <category>
     <pattern><set>nee</set></pattern>
      <that>Is een van de kijkers onder de 16 jaar</that>
     <template>
@@ -126,6 +144,12 @@
         </condition>
     </template>
   </category>
+  
+  <category>
+    <pattern><set>tvshow</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
   
    <category>
     <pattern>*</pattern>

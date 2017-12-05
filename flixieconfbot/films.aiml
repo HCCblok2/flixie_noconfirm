@@ -54,32 +54,44 @@
     <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
     <template> 
         <condition name="genre" value="actie">
-              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange.
+              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange. Welk zou je willen zien?
           </condition>
           <condition name="genre" value="drama">
-              Dit zijn de beste opties: Forrest Gump.
+              Dit zijn de beste opties: Forrest Gump. Welke zou je willen zien?
           </condition>
           <condition name="genre" value="komedie">
-              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man.
+              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man. Welke zou je willen zien?
           </condition> 
     </template>
   </category>
+  
+ <category>
+    <pattern><set>movies</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
   
   <category>
    <pattern><set>nee</set></pattern>
      <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
     <template>
     <condition name="genre" value="actie">
-            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
+            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke zou je willen zien?
         </condition>    
         <condition name="genre" value="drama">
-            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables.
+            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables. Welke zou je willen zien?
         </condition>
         <condition name="genre" value="komedie">
-            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man.
+            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man. Welke zou je willen zien?
         </condition>
     </template>
   </category>
+  
+  <category>
+    <pattern><set>movies</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
   
   <category>
    <pattern><set>nee</set></pattern>
@@ -105,32 +117,44 @@
      <that>Is een van de film kijkers jonger dan 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
-              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange.
+              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange. Welke zou je willen zien?
           </condition>
           <condition name="genre" value="drama">
-              Dit zijn de beste opties: Forrest Gump.
+              Dit zijn de beste opties: Forrest Gump. Welke zou je willen zien?
           </condition>
           <condition name="genre" value="komedie">
-              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man.
+              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man. Welke zou je willen zien?
           </condition>
     </template>
   </category>
+  
+  <category>
+    <pattern><set>movies</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
   
   <category>
     <pattern><set>nee</set></pattern>
      <that>Is een van de film kijkers jonger dan 16 jaar</that>
     <template>
         <condition name="genre" value="actie">
-            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange.
+            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke zou je willen zien?
         </condition>    
         <condition name="genre" value="drama">
-            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables.
+            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables. Welke zou je willen zien?
         </condition>
         <condition name="genre" value="komedie">
-            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man.
+            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man. Welke zou je willen? 
         </condition>
     </template>
   </category>
+  
+  <category>
+    <pattern><set>movies</set></pattern>
+     <that>Welke zou je willen zien</that>
+    <template>Goede keuze! Veel kijkplezier!</template>
+  </category> 
   
    <category>
     <pattern>*</pattern>
