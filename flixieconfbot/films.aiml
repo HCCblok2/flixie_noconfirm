@@ -12,153 +12,148 @@
   <category>
     <pattern>*</pattern>
     <template>
-        <condition name="medium"  value="serie"></condition>
         <condition name="medium" value="film"></condition>
     </template>
   </category>
   
   <category>
-     <pattern>^FILM</pattern>
+     <pattern>^ FILM</pattern>
      <template>Waar wil je naar kijken?</template>
   </category>
   
+  
   <category>
-     <pattern>^SERIE</pattern>
-     <template>Waar wil je naar kijken?</template>
-</category>
-
-  <category>
-  <pattern>^<set>genre</set></pattern>
+  <pattern>^ <set>genre</set></pattern>
     <template>
       <think><set name="genre"><input /></set></think>
         <condition name="genre" value="actie">
-            Kijk je dit alleen?
+            Kijk je deze alleen?
         </condition>
         <condition name="genre" value="drama">
-            Kijk je dit alleen?
+            Kijk je deze alleen?
         </condition>
         <condition name="genre" value="komedie">
-            Kijk je dit alleen?
+            Kijk je deze alleen?
         </condition>
     </template> 
 </category>
    
    <category>
     <pattern><set>ja</set></pattern>
-     <that>Kijk je dit alleen</that>
-    <template>Ben je zelf een film kijker jonger dan 16 jaar?</template>
+     <that>Kijk je deze alleen</that>
+    <template>Ben je jonger dan 16 jaar?</template>
   </category>
   
   <category>
     <pattern><set>ja</set></pattern>
-    <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
+    <that>Ben je jonger dan 16 jaar</that>
     <template> 
         <condition name="genre" value="actie">
-              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange. Welk zou je willen zien?
+              De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              Dit zijn de beste opties: Forrest Gump. Welke zou je willen zien?
+              Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
           </condition>
           <condition name="genre" value="komedie">
-              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man. Welke zou je willen zien?
+              De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
           </condition> 
     </template>
   </category>
   
  <category>
-    <pattern>^<set>movies</set></pattern>
-     <that>Welke zou je willen zien</that>
+    <pattern>^ <set>movies</set></pattern>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
   <category>
    <pattern><set>nee</set></pattern>
-     <that>Ben je zelf een film kijker jonger dan 16 jaar</that>
+     <that>Ben je jonger dan 16 jaar</that>
     <template>
     <condition name="genre" value="actie">
-            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke zou je willen zien?
+            De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
         </condition>    
         <condition name="genre" value="drama">
-            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables. Welke zou je willen zien?
+            De beste opties zijn: 12 Years A Slave. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man. Welke zou je willen zien?
+            De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
         </condition>
     </template>
   </category>
   
   <category>
-    <pattern>^<set>movies</set></pattern>
-     <that>Welke zou je willen zien</that>
+    <pattern>^ <set>movies</set></pattern>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
   <category>
    <pattern><set>nee</set></pattern>
-     <that>Kijk je dit alleen</that>
-    <template>Met wie kijk je deze serie?</template>
+     <that>Kijk je deze alleen</that>
+    <template>Met wie kijk je dit?</template>
   </category>
   
   <category>
     <pattern>*</pattern>
-     <that>Kijk je dit alleen</that>
+     <that>Kijk je deze alleen</that>
     <template>Sorry kun je dit herformuleren?</template>
   </category>
   
   <category>
-    <pattern>^<set>partners</set></pattern>
-         <that>Met wie kijk je deze serie</that>
+    <pattern>^ <set>partners</set></pattern>
+         <that>Met wie kijk je dit</that>
     <template><think><set name="partners"><input /></set></think>
     Is een van de kijkers jonger dan 16 jaar?</template>
   </category>
   
   <category>
     <pattern><set>ja</set></pattern>
-     <that>Is een van de film kijkers jonger dan 16 jaar</that>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
-              Dit zijn de beste opties: Star Wars: Rogue One en Doctor Strange. Welke zou je willen zien?
+              De beste opties zijn: Doctor Strange. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              Dit zijn de beste opties: Forrest Gump. Welke zou je willen zien?
+              De beste opties zijn: Forrest Gump. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              Dit zijn de beste opties: Men in Black 1,2 of 3 en She's The Man. Welke zou je willen zien?
+              De beste opties zijn: She's The Man. Welke wil je zien?
           </condition>
     </template>
   </category>
   
   <category>
-    <pattern>^<set>movies</set></pattern>
-     <that>Welke zou je willen zien</that>
+    <pattern>^ <set>movies</set></pattern>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
   <category>
     <pattern><set>nee</set></pattern>
-     <that>Is een van de film kijkers jonger dan 16 jaar</that>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
         <condition name="genre" value="actie">
-            Dit zijn de beste opties: Star Wars: Rogue One, Saving Private Ryan en Doctor Strange. Welke zou je willen zien?
+            De beste opties zijn: Saving Private Ryan en Doctor Strange. Welke wil je zien?
         </condition>    
         <condition name="genre" value="drama">
-            Dit zijn de beste opties: 12 Years A Slave, Forrest Gump en Intouchables. Welke zou je willen zien?
+            De beste opties zijn: Forrest Gump en Intouchables. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            Dit zijn de beste opties: Men in Black 1,2 of 3, The Big Short en She's The Man. Welke zou je willen? 
+            De beste opties zijn: The Big Short en She's The Man. Welke wil je zien? 
         </condition>
     </template>
   </category>
   
   <category>
-    <pattern>^<set>movies</set></pattern>
-     <that>Welke zou je willen zien</that>
+    <pattern>^ <set>movies</set></pattern>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
    <category>
     <pattern>*</pattern>
-     <that>Is een van de film kijkers jonger dan 16 jaar</that>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>Sorry kun je dit herformuleren?</template>
   </category>
 </aiml>

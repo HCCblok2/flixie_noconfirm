@@ -15,22 +15,16 @@
     <pattern>*</pattern>
     <template>
         <condition name="medium"  value="serie"></condition>
-        <condition name="medium" value="film"></condition>
     </template>
   </category>
   
-  <category>
-     <pattern>^FILM</pattern>
-     <template>Waar wil je naar kijken?</template>
-  </category>
-  
-  <category>
-     <pattern>^SERIE</pattern>
+   <category>
+     <pattern>^ SERIE</pattern>
      <template>Waar wil je naar kijken?</template>
 </category>
   
  <category>
-  <pattern>^<set>genres</set></pattern>
+  <pattern>^ <set>genres</set></pattern>
     <template>
       <think><set name="genre"><input /></set></think>
         <condition name="genre" value="actie">
@@ -46,53 +40,59 @@
 </category>
 
 <category>
+    <pattern><set>ja</set></pattern>
+     <that>Kijk je dit alleen</that>
+    <template>Ben je zelf jonger dan 16 jaar?</template>
+  </category>
+
+<category>
       <pattern><set>ja</set></pattern>
-      <that>Ben je jonger dan 16 jaar</that>
+      <that>Ben je zelf jonger dan 16 jaar</that>
       <template>
           <condition name="genre" value="actie">
-              Dit zijn de beste opties: Arrow en Blindspot.
+              De beste opties zijn: Blindspot. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              Dit zijn de beste opties Stranger Things, Sherlock en The Flash.
+              De beste opties zijn: The Flash. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              Dit zijn de beste opties How I Met Your Mother, Modern Family en Rick and Morty.
+              De beste opties zijn: Rick and Morty. Welke wil je zien?
           </condition>
       </template>
 </category>
 
 <category>
-    <pattern>^<set>tvshow</set></pattern>
-     <that>Welke zou je willen zien</that>
+    <pattern>^ <set>tvshow</set></pattern>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
 
 <category>
      <pattern><set>nee</set></pattern>
-      <that>Ben je jonger dan 16 jaar</that>
+      <that>Ben je zelf jonger dan 16 jaar</that>
       <template>
         <condition name="genre" value="actie">
-            Dit zijn de beste opties: The Punisher, Arrow en Blindspot.
+            De beste opties zijn: Blindspot. Welke wil je zien?
         </condition>    
         <condition name="genre" value="drama">
-            Dit zijn de beste opties: Stranger Things, Sherlock en The Flash.
+            De beste opties zijn: The Flash. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            Dit zijn de beste opties: How I Met Your Mother, Modern Family en Rick and Morty.
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
         </condition>
       </template>
 </category>
 
 <category>
     <pattern>^<set>tvshow</set></pattern>
-     <that>Welke zou je willen zien</that>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
 
   <category>
     <pattern><set>nee</set></pattern>
      <that>Kijk je dit alleen</that>
-    <template>Met wie kijk je deze serie?</template>
+    <template>Met wie ga je dit kijken?</template>
   </category>
   
   <category>
@@ -102,58 +102,58 @@
   </category>
   
     <category>
-    <pattern>^<set>partners</set></pattern>
-     <that>Met wie kijk je deze serie</that>
+    <pattern>^ <set>partners</set></pattern>
+     <that>Met wie ga je dit kijken</that>
     <template><think><set name="partner"><input/></set></think>
-    Is een van de kijkers onder de 16 jaar?</template>
+    Is een van de kijkers jonger dan 16 jaar?</template>
   </category>
   
   <category>
    <pattern><set>ja</set></pattern>
-     <that>Is een van de kijkers onder de 16 jaar</that>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
-              Dit zijn de beste opties: Arrow en Blindspot.
+              De beste opties zijn: Arrow. Welke wil je zien?
           </condition>
           <condition name="genre" value="drama">
-              Dit zijn de beste opties: Stranger Things, Sherlock en The Flash.
+              De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
           </condition>
           <condition name="genre" value="komedie">
-              Dit zijn de beste opties: How I Met Your Mother, Modern Family en Rick and Morty.
+              De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
 </condition></template>
   </category>
   
   <category>
-    <pattern>^<set>tvshow</set></pattern>
-     <that>Welke zou je willen zien</that>
+    <pattern>^ <set>tvshow</set></pattern>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
   <category>
     <pattern><set>nee</set></pattern>
-     <that>Is een van de kijkers onder de 16 jaar</that>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
         <condition name="genre" value="actie">
-            Dit zijn de beste opties: The Punisher, Arrow en Blindspot.
+            De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
         </condition>    
         <condition name="genre" value="drama">
-            Dit zijn de beste opties: Stranger Things, Sherlock en The Flash.
+            De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
-            Dit zijn de beste opties: How I Met Your Mother, Modern Family en Rick and Morty.
+            De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
         </condition>
     </template>
   </category>
   
   <category>
-    <pattern>^<set>tvshow</set></pattern>
-     <that>Welke zou je willen zien</that>
+    <pattern>^ <set>tvshow</set></pattern>
+     <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
    <category>
     <pattern>*</pattern>
-     <that>Is een van de kijkers onder de 16 jaar</that>
+     <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>Sorry kun je dit herformuleren?</template>
   </category>
 </aiml>
