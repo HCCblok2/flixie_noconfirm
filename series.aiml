@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     
-   <!-- bla
-   <category>
-      <pattern><set>aanbeveling</set>SERIE</pattern>
-      <template>
-      <think><set name="medium">serie</set></think>
-      Wat voor soort film wil je kijken?
-      </template>
-</category>
--->
-
-<category>
+  <category>
     <pattern>*</pattern>
     <template>
         <condition name="medium"  value="serie"></condition>
@@ -20,7 +10,7 @@
   
    <category>
      <pattern>^ SERIE</pattern>
-     <template>Waar wil je naar kijken?</template>
+     <template>Wat voor soort wil je kijken?</template>
 </category>
   
  <category>
@@ -30,10 +20,67 @@
         <condition name="genre" value="actie">
             Kijk je dit alleen?
         </condition>
+        <condition name="genre" value="actieserie">
+            Kijk je dit alleen?
+            </condition>
+            <condition name="genre" value="een actieserie">
+            Kijk je dit alleen?
+            </condition>
+            <condition name="genre" value="actionserie">
+            Kijk je dit alleen?
+            </condition>
+            <condition name="genre" value="een actionserie">
+            Kijk je dit alleen?
+            </condition>
+            <condition name="genre" value="action">
+            Kijk je dit alleen?
+            </condition>
         <condition name="genre" value="drama">
             Kijk je dit alleen?
         </condition>
+        <condition name="genre" value="een drama">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="dramaserie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="een dramaserie">
+            Kijk je dit alleen?
+        </condition>
         <condition name="genre" value="komedie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="komedieserie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="een komedieserie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="een komedie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="comedy">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="een comedy">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="een comedyserie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="comedyserie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="comedie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="een comedie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="een comedieserie">
+            Kijk je dit alleen?
+        </condition>
+        <condition name="genre" value="comedieserie">
             Kijk je dit alleen?
         </condition>
     </template> 
@@ -49,15 +96,72 @@
       <pattern><set>ja</set></pattern>
       <that>Ben je zelf jonger dan 16 jaar</that>
       <template>
-          <condition name="genre" value="actie">
-              De beste opties zijn: Blindspot. Welke wil je zien?
-          </condition>
-          <condition name="genre" value="drama">
-              De beste opties zijn: The Flash. Welke wil je zien?
-          </condition>
-          <condition name="genre" value="komedie">
-              De beste opties zijn: Rick and Morty. Welke wil je zien?
-          </condition>
+      <condition name="genre" value="actie">
+           De beste opties zijn: Blindspot. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="actieserie">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="een actieserie">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="actionserie">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="een actionserie">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="action">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+        <condition name="genre" value="drama">
+           De beste opties zijn: The Flash. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een drama">
+           De beste opties zijn: The Flash. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="dramaserie">
+           De beste opties zijn: The Flash. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een dramaserie">
+            De beste opties zijn: The Flash. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="komedie">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="komedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedy">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedy">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedyserie">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedyserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedie">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
       </template>
 </category>
 
@@ -71,14 +175,71 @@
      <pattern><set>nee</set></pattern>
       <that>Ben je zelf jonger dan 16 jaar</that>
       <template>
-        <condition name="genre" value="actie">
+        <<condition name="genre" value="actie">
+           De beste opties zijn: Blindspot. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="actieserie">
             De beste opties zijn: Blindspot. Welke wil je zien?
-        </condition>    
+            </condition>
+            <condition name="genre" value="een actieserie">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="actionserie">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="een actionserie">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="action">
+            De beste opties zijn: Blindspot. Welke wil je zien?
+            </condition>
         <condition name="genre" value="drama">
+           De beste opties zijn: The Flash. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een drama">
+           De beste opties zijn: The Flash. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="dramaserie">
+           De beste opties zijn: The Flash. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een dramaserie">
             De beste opties zijn: The Flash. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
             De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="komedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedy">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedy">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedyserie">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedyserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedie">
+            De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedieserie">
+           De beste opties zijn: Rick and Morty. Welke wil je zien?
         </condition>
       </template>
 </category>
@@ -113,14 +274,71 @@
      <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
-              De beste opties zijn: Arrow. Welke wil je zien?
-          </condition>
-          <condition name="genre" value="drama">
-              De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
-          </condition>
-          <condition name="genre" value="komedie">
-              De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
-</condition></template>
+          De beste opties zijn: Arrow. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="actieserie">
+            De beste opties zijn: Arrow. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="een actieserie">
+           De beste opties zijn: Arrow. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="actionserie">
+            De beste opties zijn: Arrow. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="een actionserie">
+           De beste opties zijn: Arrow. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="action">
+            De beste opties zijn: Arrow. Welke wil je zien?
+            </condition>
+        <condition name="genre" value="drama">
+           De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een drama">
+           De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="dramaserie">
+           De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een dramaserie">
+            De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="komedie">
+            De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="komedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedy">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedy">
+            De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedyserie">
+             De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedyserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedie">
+            De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedie">
+             De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition></template>
   </category>
   
   <category>
@@ -133,14 +351,71 @@
     <pattern><set>nee</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
-        <condition name="genre" value="actie">
+         <condition name="genre" value="actie">
+           De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="actieserie">
+             De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="een actieserie">
             De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
-        </condition>    
+            </condition>
+            <condition name="genre" value="actionserie">
+             De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="een actionserie">
+           De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="action">
+             De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
+            </condition>
         <condition name="genre" value="drama">
+           De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een drama">
+           De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="dramaserie">
+           De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een dramaserie">
             De beste opties zijn: Stranger Things, Sherlock. Welke wil je zien?
         </condition>
         <condition name="genre" value="komedie">
             De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="komedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een komedie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedy">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedy">
+            De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedyserie">
+             De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedyserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedie">
+            De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedie">
+             De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="een comedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
+        </condition>
+        <condition name="genre" value="comedieserie">
+           De beste opties zijn: How I Met Your Mother, Modern Family. Welke wil je zien?
         </condition>
     </template>
   </category>
