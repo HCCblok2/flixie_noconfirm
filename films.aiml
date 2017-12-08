@@ -113,7 +113,7 @@
              Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
         </condition>
         <condition name="genre" value="een drama">
-             Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
+             Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is. 
         </condition>
         <condition name="genre" value="dramafilm">
             Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
@@ -131,7 +131,7 @@
              De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
         </condition>
         <condition name="genre" value="een komedie">
-           De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
+           De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien? 
         </condition>
         <condition name="genre" value="comedy">
            De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
