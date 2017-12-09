@@ -1,0 +1,62 @@
+<aiml version="2.0">
+
+<category><pattern>EEN DRAMASERIE</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+<category><pattern>EEN ACTIESERIE</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+<category><pattern>EEN COMEDYSERIE</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+<category><pattern>EEN KOMEDIESERIE</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+<category><pattern>EEN COMEDIESERIE</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+
+
+
+        
+<category><pattern>EEN ACTIONSERIE</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+
+
+
+        
+<category><pattern>ACTIESERIE</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+<category><pattern>DRAMASHOW</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+<category><pattern>EEN DRAMASHOW</pattern><template>Kijk je dit alleen?</template></category>
+
+
+        
+
+
+
+        
+<category><pattern>EEN DRAMAFILM</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+<category><pattern>EEN KOMEDIEFILM</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+
+
+
+</aiml>

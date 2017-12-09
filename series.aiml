@@ -9,14 +9,34 @@
   </category>
   
    <category>
-     <pattern>^ SERIE</pattern>
-     <template>Wat voor soort wil je kijken?</template> 
-</category>
-  
+      <pattern>^ <set>aanbeveling</set>SERIE</pattern>
+      <template>
+      <think><set name="medium">serie</set>
+    <set name="topic">serie</set></think>
+    Wat voor soort wil je kijken?</template> 
+    </category>
+    
+    <category>
+      <pattern><set>aanbeveling</set> TV-SERIE</pattern>
+      <template>
+      <think><set name="medium">serie</set>
+      <set name="topic">serie</set></think>
+      Wat voor soort wil je kijken?</template>
+  </category>
+
+    <category>
+        <pattern><set>aanbeveling</set> TV SHOW</pattern>
+        <template>
+        <think><set name="medium">serie</set>
+        <set name="topic">serie</set></think>
+        Wat voor soort wil je kijken?</template>
+      </category>
+
+    
+ <topic name="serie">
  <category>
   <pattern>^ <set>genre</set></pattern>
     <template>
-      <think><set name="genre"><input /></set></think>
         <condition name="genre" value="actie">
         Kijk je dit alleen?
         </condition>
@@ -425,10 +445,5 @@
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
-  
-   <category>
-    <pattern>*</pattern>
-     <that>Is een van de kijkers jonger dan 16 jaar</that>
-    <template>Sorry kun je dit herformuleren?</template>
-  </category>
-</aiml>
+  </topic>
+  </aiml>
