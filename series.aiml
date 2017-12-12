@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     
-  <category>
-    <pattern>*</pattern>
-    <template>
-        <condition name="medium"  value="serie"></condition>
-    </template>
-  </category>
-  
-   <category>
+     <category>
       <pattern>^ <set>aanbeveling</set>SERIE</pattern>
+      <template>
+      <think><set name="medium">serie</set>
+    <set name="topic">serie</set></think>
+    Wat voor soort wil je kijken?</template> 
+    </category>
+    
+    <category>
+      <pattern>^ SERIE</pattern>
       <template>
       <think><set name="medium">serie</set>
     <set name="topic">serie</set></think>
@@ -33,10 +34,11 @@
       </category>
 
     
- <topic name="serie">
- <category>
+  <category>
   <pattern>^ <set>genre</set></pattern>
+  <that>Wat voor soort wil je kijken</that>
     <template>
+    <think><set name="genre"><input /></set></think>
         <condition name="genre" value="actie">
         Kijk je dit alleen?
         </condition>
@@ -116,7 +118,7 @@
       <pattern><set>ja</set></pattern>
       <that>Ben je zelf jonger dan 16 jaar</that>
       <template>
-      <condition name="genre" value="actie">
+       <condition name="genre" value="actie">
         De beste opties zijn: Blindspot. Welke wil je zien?
         </condition>
         <condition name="genre" value="actieserie">
@@ -190,7 +192,6 @@
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
-
 
 <category>
      <pattern><set>nee</set></pattern>
@@ -294,7 +295,7 @@
    <pattern><set>ja</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
-          <condition name="genre" value="actie">
+        <condition name="genre" value="actie">
           De beste opties zijn: Arrow. Welke wil je zien?
         </condition>
         <condition name="genre" value="actieserie">
@@ -372,7 +373,7 @@
     <pattern><set>nee</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
-         <condition name="genre" value="actie">
+     <condition name="genre" value="actie">
            De beste opties zijn: The Punisher, Arrow. Welke wil je zien?
         </condition>
         <condition name="genre" value="actieserie">
@@ -446,5 +447,5 @@
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
-  </topic>
+
   </aiml>

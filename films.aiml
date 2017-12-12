@@ -17,25 +17,38 @@
       </template>
 </category>
 
- <topic name="film">
   <category>
   <pattern>^ <set>genre</set></pattern>
+  <that>Wat voor soort genre wil je kijken</that>
     <template>
+    <think><set name="genre"></set></think>
         <condition name="genre" value="actiefilm">
              Kijk je deze alleen?
-            </condition>
-            <condition name="genre" value="een actiefilm">
+        </condition>
+        <condition name="genre" value="een actiefilm">
             Kijk je deze alleen?
-            </condition>
-            <condition name="genre" value="actionfilm">
+        </condition>
+        <condition name="genre" value="actionfilm">
             Kijk je deze alleen?
-            </condition>
-            <condition name="genre" value="een actionfilm">
+        </condition>
+        <condition name="genre" value="een actionfilm">
              Kijk je deze alleen?
-            </condition>
-            <condition name="genre" value="action">
+        </condition>
+        <condition name="genre" value="action">
              Kijk je deze alleen?
-            </condition>
+        </condition>
+        <condition name="genre" value="actie">
+             Kijk je deze alleen?
+        </condition>
+        Kijk je deze alleen?
+        </template>
+        </category>
+        
+         <category>
+  <pattern>^ <set>genre</set></pattern>
+   <that>Wat voor soort genre wil je kijken</that>
+    <template>
+    <think><set name="genre">drama</set></think>
          <condition name="genre" value="drama">
              Kijk je deze alleen?
         </condition>
@@ -48,6 +61,15 @@
         <condition name="genre" value="een dramafilm">
             Kijk je deze alleen?
         </condition>
+        Kijk je deze alleen?
+        </template>
+        </category>
+        
+        <category>
+       <pattern>^ <set>genre</set></pattern>
+        <that>Wat voor soort genre wil je kijken</that>
+    <template>
+    <think><set name="genre">komedie</set></think>
             <condition name="genre" value="komedie">
             Kijk je deze alleen?
         </condition>
@@ -94,68 +116,82 @@
     <pattern><set>ja</set></pattern>
     <that>Ben je jonger dan 16 jaar</that>
     <template> 
-        <condition name="genre" value="actie">
-      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien
+    <condition name="genre" value="actie">
+      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
       </condition>
       <condition name="genre" value="action">
-      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien
+      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
       </condition>
       <condition name="genre" value="een actiefilm">
-      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien
+      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
       </condition>
       <condition name="genre" value="actionfilm">
-      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien
+      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
       </condition>
       <condition name="genre" value="een actiefilm">
-      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien
+      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
       </condition>
-        <condition name="genre" value="drama">
+      </template>
+      </category>
+      
+      <category>
+    <pattern><set>ja</set></pattern>
+    <that>Ben je jonger dan 16 jaar</that>
+    <template> 
+      <condition name="genre" value="drama">
              Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
-        </condition>
-        <condition name="genre" value="een drama">
+      </condition>
+      <condition name="genre" value="een drama">
              Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is. 
-        </condition>
-        <condition name="genre" value="dramafilm">
+      </condition>
+      <condition name="genre" value="dramafilm">
             Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
-        </condition>
-        <condition name="genre" value="een dramafilm">
+      </condition>
+      <condition name="genre" value="een dramafilm">
             Sorry, ik heb helaas geen aanbeveling voor jou die geschikt is.
-        </condition>
-               <condition name="genre" value="komedie">
+      </condition>
+      </template>
+      </category>
+      
+      <category>
+    <pattern><set>ja</set></pattern>
+    <that>Ben je jonger dan 16 jaar</that>
+    <template> 
+    <condition name="genre" value="komedie">
             De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="komediefilm">
+      </condition>
+      <condition name="genre" value="komediefilm">
             De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="een komediefilm">
+      </condition>
+      <condition name="genre" value="een komediefilm">
              De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="een komedie">
+      </condition>
+      <condition name="genre" value="een komedie">
            De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien? 
-        </condition>
-        <condition name="genre" value="comedy">
+      </condition>
+      <condition name="genre" value="comedy">
            De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="een comedy">
+      </condition>
+      <condition name="genre" value="een comedy">
             De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="een comedyfilm">
+      </condition>
+      <condition name="genre" value="een comedyfilm">
             De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="comedyfilm">
+      </condition>
+      <condition name="genre" value="comedyfilm">
            De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="comedie">
+      </condition>
+      <condition name="genre" value="comedie">
            De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="een comedie">
+      </condition>
+      <condition name="genre" value="een comedie">
              De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        <condition name="genre" value="een comediefilm">
+      </condition>
+      <condition name="genre" value="een comediefilm">
             De beste opties zijn: Men in Black 1,2 of 3. Welke wil je zien?
-        </condition>
-        </template>
-        </category>
+    </condition>
+    </template>
+ </category>
 
  <category>
     <pattern>^ <set>movies</set></pattern>
@@ -163,25 +199,25 @@
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
-      <category>
-    <pattern><set>nee</set></pattern>
+    <category>
+    <pattern><set>NEE</set></pattern>
     <that>Ben je jonger dan 16 jaar</that>
     <template> 
-          <condition name="genre" value="actiefilm">
+        <condition name="genre" value="actiefilm">
              De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
-            </condition>
-            <condition name="genre" value="een actiefilm">
+        </condition>
+        <condition name="genre" value="een actiefilm">
             De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
-            </condition>
-            <condition name="genre" value="actionfilm">
+        </condition>
+        <condition name="genre" value="actionfilm">
             De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
-            </condition>
-            <condition name="genre" value="een actionfilm">
+        </condition>
+        <condition name="genre" value="een actionfilm">
              De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
-            </condition>
-            <condition name="genre" value="action">
+        </condition>
+        <condition name="genre" value="action">
              De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
-            </condition>
+        </condition>
         <condition name="genre" value="drama">
              De beste opties zijn: 12 Years A Slave. Welke wil je zien?
         </condition>
@@ -258,7 +294,7 @@
     <pattern><set>ja</set></pattern>
      <that>Is een van de kijkers onder de 16 jaar</that>
     <template>
-          <condition name="genre" value="actiefilm">
+              <condition name="genre" value="actiefilm">
              De beste opties zijn: Doctor Strange. Welke wil je zien?
             </condition>
             <condition name="genre" value="een actiefilm">
@@ -271,6 +307,9 @@
              De beste opties zijn: Doctor Strange. Welke wil je zien?
             </condition>
             <condition name="genre" value="action">
+             De beste opties zijn: Doctor Strange. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="actie">
              De beste opties zijn: Doctor Strange. Welke wil je zien?
             </condition>
         <condition name="genre" value="drama">
@@ -331,7 +370,7 @@
     <pattern><set>nee</set></pattern>
      <that>Is een van de kijkers onder de 16 jaar</that>
     <template>
-        <condition name="genre" value="actiefilm">
+            <condition name="genre" value="actiefilm">
              De beste opties zijn: Saving Private Ryan en Doctor Strange. Welke wil je zien?
             </condition>
             <condition name="genre" value="een actiefilm">
@@ -344,6 +383,9 @@
             De beste opties zijn: Saving Private Ryan en Doctor Strange. Welke wil je zien?
             </condition>
             <condition name="genre" value="action">
+            De beste opties zijn: Saving Private Ryan en Doctor Strange. Welke wil je zien?
+            </condition>
+            <condition name="genre" value="actie">
             De beste opties zijn: Saving Private Ryan en Doctor Strange. Welke wil je zien?
             </condition>
         <condition name="genre" value="drama">
@@ -405,5 +447,4 @@
      <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>Sorry kun je dit herformuleren?</template>
   </category>
-  </topic>
 </aiml>
