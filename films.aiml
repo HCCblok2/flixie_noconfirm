@@ -246,8 +246,7 @@
   <category>
     <pattern>^ <set>partners</set> ^</pattern>
          <that>Met wie kijk je dit</that>
-    <template><think><set name="partners"><input /></set></think>
-    Is een van de kijkers onder de 16 jaar?</template>
+    <template>Is een van de kijkers onder de 16 jaar?</template>
   </category>
   
   <category>
