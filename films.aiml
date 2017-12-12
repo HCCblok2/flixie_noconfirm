@@ -2,14 +2,14 @@
 <aiml version="2.0">
  
  <category>
-    <pattern><set>recommendation</set> FILM ^</pattern>
+    <pattern><set>recommendation</set>^ FILM</pattern>
       <template>
     <think><set name="medium">film</set></think>
     </template>
   </category>
   
   <category>
-      <pattern>^ FILM ^</pattern>
+      <pattern>^ FILM</pattern>
       <template>
       <think><set name="medium">film</set>
       <set name="topic">film</set></think>
@@ -19,7 +19,7 @@
 
  <topic name="film">
   <category>
-  <pattern>^ <set>genre</set> ^</pattern>
+  <pattern>^ <set>genre</set></pattern>
     <template>
         <condition name="genre" value="actiefilm">
              Kijk je deze alleen?
@@ -86,7 +86,7 @@
    
   
   <category>
-    <pattern><set>ja</set> ^</pattern>
+    <pattern><set>ja</set></pattern>
     <that>Ben je jonger dan 16 jaar</that>
     <template> 
         <condition name="genre" value="actie">
@@ -153,13 +153,13 @@
         </category>
 
  <category>
-    <pattern>^ <set>movies</set> ^</pattern>
+    <pattern>^ <set>movies</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
       <category>
-    <pattern><set>nee</set> ^</pattern>
+    <pattern><set>nee</set></pattern>
     <that>Ben je jonger dan 16 jaar</that>
     <template> 
           <condition name="genre" value="actiefilm">
@@ -226,13 +226,13 @@
   </category>
   
   <category>
-    <pattern>^ <set>movies</set> ^</pattern>
+    <pattern>^ <set>movies</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
   <category>
-   <pattern><set>nee</set> ^</pattern>
+   <pattern><set>nee</set></pattern>
      <that>Kijk je deze alleen</that>
     <template>Met wie kijk je dit?</template>
   </category>
@@ -244,13 +244,13 @@
   </category>
   
   <category>
-    <pattern>^ <set>partners</set> ^</pattern>
+    <pattern>^ <set>partners</set></pattern>
          <that>Met wie kijk je dit</that>
     <template>Is een van de kijkers onder de 16 jaar?</template>
   </category>
   
   <category>
-    <pattern><set>ja</set> ^</pattern>
+    <pattern><set>ja</set></pattern>
      <that>Is een van de kijkers onder de 16 jaar</that>
     <template>
           <condition name="genre" value="actiefilm">
@@ -317,13 +317,13 @@
   </category>
   
   <category>
-    <pattern>^ <set>movies</set> ^</pattern>
+    <pattern>^ <set>movies</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
   <category>
-    <pattern><set>nee</set> ^</pattern>
+    <pattern><set>nee</set></pattern>
      <that>Is een van de kijkers onder de 16 jaar</that>
     <template>
         <condition name="genre" value="actiefilm">
@@ -390,7 +390,7 @@
   </category>
   
   <category>
-    <pattern>^ <set>movies</set> ^</pattern>
+    <pattern>^ <set>movies</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 

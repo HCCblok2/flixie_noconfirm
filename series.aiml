@@ -9,7 +9,7 @@
   </category>
   
    <category>
-      <pattern>^ <set>aanbeveling</set>SERIE ^</pattern>
+      <pattern>^ <set>aanbeveling</set>SERIE</pattern>
       <template>
       <think><set name="medium">serie</set>
     <set name="topic">serie</set></think>
@@ -17,7 +17,7 @@
     </category>
     
     <category>
-      <pattern>^ <set>aanbeveling</set> TV-SERIE ^</pattern>
+      <pattern>^ <set>aanbeveling</set> TV-SERIE</pattern>
       <template>
       <think><set name="medium">serie</set>
       <set name="topic">serie</set></think>
@@ -25,7 +25,7 @@
   </category>
 
     <category>
-        <pattern>^ <set>aanbeveling</set> TV SHOW ^</pattern>
+        <pattern>^ <set>aanbeveling</set> TV SHOW</pattern>
         <template>
         <think><set name="medium">serie</set>
         <set name="topic">serie</set></think>
@@ -35,7 +35,7 @@
     
  <topic name="serie">
  <category>
-  <pattern>^ <set>genre</set> ^</pattern>
+  <pattern>^ <set>genre</set></pattern>
     <template>
         <condition name="genre" value="actie">
         Kijk je dit alleen?
@@ -108,7 +108,7 @@
 
 
 <category>
-      <pattern><set>ja</set> ^</pattern>
+      <pattern><set>ja</set></pattern>
       <that>Ben je zelf jonger dan 16 jaar</that>
       <template>
       <condition name="genre" value="actie">
@@ -181,13 +181,13 @@
 </category>
 
 <category>
-    <pattern>^ <set>tvshow</set> ^</pattern>
+    <pattern>^ <set>tvshow</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
 
 <category>
-     <pattern><set>nee</set> ^</pattern>
+     <pattern><set>nee</set></pattern>
       <that>Ben je zelf jonger dan 16 jaar</that>
       <template>
         <condition name="genre" value="actie">
@@ -260,13 +260,13 @@
 </category>
 
 <category>
-    <pattern>^<set>tvshow</set> ^</pattern>
+    <pattern>^<set>tvshow</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
 
   <category>
-    <pattern><set>nee</set> ^</pattern>
+    <pattern><set>nee</set></pattern>
      <that>Kijk je dit alleen</that>
     <template>Met wie ga je dit kijken?</template>
   </category>
@@ -278,14 +278,14 @@
   </category>
   
     <category>
-    <pattern>^ <set>partners</set> ^</pattern>
+    <pattern>^ <set>partners</set></pattern>
      <that>Met wie ga je dit kijken</that>
     <template><think><set name="partner"><input/></set></think>
     Is een van de kijkers jonger dan 16 jaar?</template>
   </category>
   
   <category>
-   <pattern><set>ja</set> ^</pattern>
+   <pattern><set>ja</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
           <condition name="genre" value="actie">
@@ -357,13 +357,13 @@
   </category>
   
   <category>
-    <pattern>^ <set>tvshow</set> ^</pattern>
+    <pattern>^ <set>tvshow</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
   
   <category>
-    <pattern><set>nee</set> ^</pattern>
+    <pattern><set>nee</set></pattern>
      <that>Is een van de kijkers jonger dan 16 jaar</that>
     <template>
          <condition name="genre" value="actie">
@@ -436,7 +436,7 @@
   </category>
   
   <category>
-    <pattern>^ <set>tvshow</set> ^</pattern>
+    <pattern>^ <set>tvshow</set></pattern>
      <that>Welke wil je zien</that>
     <template>Goede keuze! Veel kijkplezier!</template>
   </category> 
