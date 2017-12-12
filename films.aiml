@@ -87,11 +87,6 @@
         </template>
         </category>
    
-   <category>
-    <pattern><set>ja</set></pattern>
-     <that>Kijk je deze alleen</that>
-    <template>Ben je jonger dan 16 jaar?</template>
-  </category>
   
   <category>
     <pattern><set>ja</set></pattern>
