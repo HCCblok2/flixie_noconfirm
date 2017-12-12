@@ -13,7 +13,7 @@
       <template>
       <think><set name="medium">film</set>
       <set name="topic">film</set></think>
-      Wat voor soort film wil je kijken?
+      Wat voor soort genre wil je kijken?
       </template>
 </category>
 

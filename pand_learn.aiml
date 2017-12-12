@@ -59,4 +59,32 @@
 
 
 
+        
+<category><pattern>EEN ACTIEFILM</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+<category><pattern>EEN ACTIONFILM</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+<category><pattern>ACTIEGENRE</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+<category><pattern>DRAMAGENRE</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+<category><pattern>KOMEDIEGENRE</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+<category><pattern>COMEDYGENRE</pattern><template>Kijk je deze alleen?</template></category>
+
+
+        
+<category><pattern>COMEDIEGENRE</pattern><template>Kijk je deze alleen?</template></category>
+
+
 </aiml>
