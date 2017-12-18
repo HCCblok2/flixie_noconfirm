@@ -185,10 +185,13 @@
   </category> 
   
     <category>
-    <pattern><set>NEE</set></pattern>
+    <pattern><set>nee</set></pattern>
     <that>Ben je jonger dan 16 jaar</that>
     <template> 
-        <condition name="genre" value="actiefilm">
+        <condition name="genre" value="actie">
+      De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
+      </condition>
+      <condition name="genre" value="actiefilm">
              De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
         </condition>
         <condition name="genre" value="een actiefilm">
