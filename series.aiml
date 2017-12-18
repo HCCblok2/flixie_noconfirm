@@ -6,7 +6,7 @@
       <template>
       <think><set name="medium">serie</set>
     <set name="topic">serie</set></think>
-    Wat voor soort wil je kijken?</template> 
+    Wat voor soort wil jij kijken?</template> 
     </category>
     
     <category>
@@ -14,7 +14,7 @@
       <template>
       <think><set name="medium">serie</set>
     <set name="topic">serie</set></think>
-    Wat voor soort wil je kijken?</template> 
+    Wat voor soort wil jij kijken?</template> 
     </category>
     
     <category>
@@ -22,7 +22,7 @@
       <template>
       <think><set name="medium">serie</set>
       <set name="topic">serie</set></think>
-      Wat voor soort wil je kijken?</template>
+      Wat voor soort wil jij kijken?</template>
   </category>
 
     <category>
@@ -30,13 +30,13 @@
         <template>
         <think><set name="medium">serie</set>
         <set name="topic">serie</set></think>
-        Wat voor soort wil je kijken?</template>
+        Wat voor soort wil jij kijken?</template>
       </category>
 
     
   <category>
   <pattern>^ <set>genre</set></pattern>
-  <that>Wat voor soort wil je kijken</that>
+  <that>Wat voor soort wil jij kijken</that>
     <template>
     <think><set name="genre"><input /></set></think>
         <condition name="genre" value="actie">

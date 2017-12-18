@@ -2,26 +2,28 @@
 <aiml version="2.0">
  
  <category>
-    <pattern><set>recommendation</set>^ FILM</pattern>
+    <pattern><set>aanbeveling</set>^ FILM</pattern>
       <template>
-    <think><set name="medium">film</set></think>
+    <think><set name="medium">film</set>
+    <set name="topic">film</set></think>
+    Welk soort genre wil je kijken?
     </template>
   </category>
-  
+ 
   <category>
       <pattern>^ FILM</pattern>
       <template>
       <think><set name="medium">film</set>
       <set name="topic">film</set></think>
-      Wat voor soort genre wil je kijken?
+      Welk soort genre wil je kijken?
       </template>
 </category>
 
   <category>
-  <pattern>^ <set>genre</set></pattern>
-  <that>Wat voor soort genre wil je kijken</that>
+       <pattern>^ <set>genre</set></pattern>
+      <that>Welk soort genre wil je kijken</that>
     <template>
-    <think><set name="genre"></set></think>
+    <think><set name="genre"><input /></set></think>
         <condition name="genre" value="actiefilm">
              Kijk je deze alleen?
         </condition>
@@ -40,16 +42,7 @@
         <condition name="genre" value="actie">
              Kijk je deze alleen?
         </condition>
-        Kijk je deze alleen?
-        </template>
-        </category>
-        
-         <category>
-  <pattern>^ <set>genre</set></pattern>
-   <that>Wat voor soort genre wil je kijken</that>
-    <template>
-    <think><set name="genre">drama</set></think>
-         <condition name="genre" value="drama">
+          <condition name="genre" value="drama">
              Kijk je deze alleen?
         </condition>
         <condition name="genre" value="een drama">
@@ -61,15 +54,6 @@
         <condition name="genre" value="een dramafilm">
             Kijk je deze alleen?
         </condition>
-        Kijk je deze alleen?
-        </template>
-        </category>
-        
-        <category>
-       <pattern>^ <set>genre</set></pattern>
-        <that>Wat voor soort genre wil je kijken</that>
-    <template>
-    <think><set name="genre">komedie</set></think>
             <condition name="genre" value="komedie">
             Kijk je deze alleen?
         </condition>
@@ -116,6 +100,7 @@
     <pattern><set>ja</set></pattern>
     <that>Ben je jonger dan 16 jaar</that>
     <template> 
+    <think><set name="genre"></set></think>
     <condition name="genre" value="actie">
       De beste opties zijn: Star Wars: Rogue One. Welke wil je zien?
       </condition>
